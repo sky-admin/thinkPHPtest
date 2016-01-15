@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+Extend
+*.log
+Common
+app/Runtime
+Tpl
+Conf
+Lang
