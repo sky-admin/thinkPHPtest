@@ -3,6 +3,10 @@ Extend
 *.log
 Common
 app/Runtime
-Tpl
+/Tpl/*
 Conf
 Lang
+Lib/Behavior
+Lib/Core
+Lib/Driver
+Lib/Template
