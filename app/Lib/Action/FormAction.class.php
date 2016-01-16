@@ -24,14 +24,18 @@ class FormAction extends Action{
     }
 
     public function read($id = 0){
-        $Form = M('Form');
-        $data = $Form->find($id);
-        if($data){
-            $this->data = $data;
-        }else{
-            $this->error('数据错误');
+        if($id == 0){
+            $this->display('formlist');
+        }else {
+            $Form = M('Form');
+            $data = $Form->find($id);
+            if ($data) {
+                $this->data = $data;
+            } else {
+                $this->error('数据错误');
+            }
+            $this->display();
         }
-        $this->display();
     }
     public function formlist(){
         $this->display();
