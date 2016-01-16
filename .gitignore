@@ -1,12 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
-Extend
-*.log
-Common
-app/Runtime
-/Tpl/*
-Conf
-Lang
-Lib/Behavior
-Lib/Core
-Lib/Driver
-Lib/Template
+app/Runtime/Cache
+config.php
+app/Runtime/Logs
