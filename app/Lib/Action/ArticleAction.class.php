@@ -6,6 +6,16 @@
  * Time: 下午11:56
  */
 class ArticleAction extends Action{
+    public function read($id = 0){
+        $Data = D('Article');
+        $data = $Data->find($id);
+        if ($data) {
+            $this->data = $data;
+        } else {
+            $this->error('数据错误');
+        }
+        $this->display();
+    }
     public function insert(){
         $Form  = D('Article');
         if($Form->create()){
